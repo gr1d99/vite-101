@@ -4,6 +4,7 @@ module.exports = {
     es2021: true
   },
   extends: [
+    'eslint:recommended',
     'plugin:react/recommended',
     'standard-with-typescript'
   ],
@@ -18,6 +19,12 @@ module.exports = {
     'react'
   ],
   rules: {
-    "react/react-in-jsx-scope": 0
+    "react/react-in-jsx-scope": 0,
+    "indent": ["error", 2]
+  },
+  settings: {
+    "react": {
+      "version": "detect"
+    }
   }
 }
